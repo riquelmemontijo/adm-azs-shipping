@@ -2,8 +2,9 @@ version: '2.4'
 services:
   database:
     image: postgres
-    container_name: azship
+    container_name: azship_db
     environment:
+      - POSTGRES_DB=azship
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=admin
     ports:
